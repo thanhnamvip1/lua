@@ -1,0 +1,3622 @@
+    require "TSLib"
+
+
+    choice = dialogRet("Chọn Tool", "PVP", "PVE", "Thoát Tool", 0);
+    if choice == 0 then   
+        timeslep = 2
+        nam1 = 366
+        nam2 = 508
+        nam3 = 844
+    elseif choice == 1 then  
+        -- dialog("Bản PVE hiện có hack PVE k mất tym auto qua màn",{timeout = 10,title = "Thông Báo",button = "ok"})
+        timeslep = 20
+        nam1 = 259
+        nam2 = 508
+        nam3 = 737
+    elseif choice == 2 then  
+        lua_exit()
+    end
+
+    while true
+        do
+        function gau1()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"60|120|0xa1dc00,60|0|0xa1dc00,0|60|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 60
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+        function gau2()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"0|60|0xa1dc00,60|60|0xa1dc00,120|0|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+        function gau3()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"60|0|0xa1dc00,60|60|0xa1dc00,-60|60|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gau4()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"60|60|0xa1dc00,60|120|0xa1dc00,0|120|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gau5()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"60|0|0xa1dc00,60|60|0xa1dc00,0|120|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gau6()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"60|0|0xa1dc00,0|60|0xa1dc00,120|60|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gau7()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"-60|60|0xa1dc00,-60|120|0xa1dc00,0|120|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gau8()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"120|0|0xa1dc00,120|60|0xa1dc00,60|60|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauden1()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"60|120|0xc6ceda,60|0|0xc6ceda,0|60|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 60
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+        function gauden2()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"0|60|0xc6ceda,60|60|0xc6ceda,120|0|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+        function gauden3()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"60|0|0xc6ceda,60|60|0xc6ceda,-60|60|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauden4()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"60|60|0xc6ceda,60|120|0xc6ceda,0|120|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauden5()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"60|0|0xc6ceda,60|60|0xc6ceda,0|120|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauden6()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"60|0|0xc6ceda,0|60|0xc6ceda,120|60|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauden7()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"-60|60|0xc6ceda,-60|120|0xc6ceda,0|120|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauden8()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"120|0|0xc6ceda,120|60|0xc6ceda,60|60|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khi1()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"60|120|0xd75e00,60|0|0xd75e00,0|60|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 60
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+        function khi2()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"0|60|0xd75e00,60|60|0xd75e00,120|0|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+        function khi3()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"60|0|0xd75e00,60|60|0xd75e00,-60|60|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khi4()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"60|60|0xd75e00,60|120|0xd75e00,0|120|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khi5()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"60|0|0xd75e00,60|60|0xd75e00,0|120|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khi6()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"60|0|0xd75e00,0|60|0xd75e00,120|60|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khi7()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"-60|60|0xd75e00,-60|120|0xd75e00,0|120|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khi8()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"120|0|0xd75e00,120|60|0xd75e00,60|60|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function ga1()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"60|120|0xfcd700,60|0|0xfcd700,0|60|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 60
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+        function ga2()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"0|60|0xfcd700,60|60|0xfcd700,120|0|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+        function ga3()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"60|0|0xfcd700,60|60|0xfcd700,-60|60|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function ga4()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"60|60|0xfcd700,60|120|0xfcd700,0|120|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function ga5()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"60|0|0xfcd700,60|60|0xfcd700,0|120|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function ga6()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"60|0|0xfcd700,0|60|0xfcd700,120|60|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function ga7()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"-60|60|0xfcd700,-60|120|0xfcd700,0|120|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function ga8()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"120|0|0xfcd700,120|60|0xfcd700,60|60|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function tho1()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"60|120|0xffc5d2,60|0|0xffc5d2,0|60|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 60
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+        function tho2()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"0|60|0xffc5d2,60|60|0xffc5d2,120|0|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+        function tho3()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"60|0|0xffc5d2,60|60|0xffc5d2,-60|60|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function tho4()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"60|60|0xffc5d2,60|120|0xffc5d2,0|120|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function tho5()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"60|0|0xffc5d2,60|60|0xffc5d2,0|120|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function tho6()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"60|0|0xffc5d2,0|60|0xffc5d2,120|60|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function tho7()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"-60|60|0xffc5d2,-60|120|0xffc5d2,0|120|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function tho8()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"120|0|0xffc5d2,120|60|0xffc5d2,60|60|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function cho1()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"60|120|0x0a7dd0,60|0|0x0a7dd0,0|60|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 60
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+        function cho2()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"0|60|0x0a7dd0,60|60|0x0a7dd0,120|0|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+        function cho3()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"60|0|0x0a7dd0,60|60|0x0a7dd0,-60|60|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function cho4()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"60|60|0x0a7dd0,60|120|0x0a7dd0,0|120|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function cho5()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"60|0|0x0a7dd0,60|60|0x0a7dd0,0|120|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function cho6()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"60|0|0x0a7dd0,0|60|0x0a7dd0,120|60|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function cho7()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"-60|60|0x0a7dd0,-60|120|0x0a7dd0,0|120|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function cho8()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"120|0|0x0a7dd0,120|60|0x0a7dd0,60|60|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        -----------------------------------------------------
+        -----------------------------------------------------
+
+        function gaul1()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"60|60|0xa1dc00,120|0|0xa1dc00,180|0|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaul2()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"60|0|0xa1dc00,120|60|0xa1dc00,180|0|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaul3()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"-60|60|0xa1dc00,60|60|0xa1dc00,120|60|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaul4()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"-120|60|0xa1dc00,-60|60|0xa1dc00,60|60|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaul5()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"-60|60|0xa1dc00,0|120|0xa1dc00,0|180|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaul6()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"0|60|0xa1dc00,-60|120|0xa1dc00,0|180|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaul7()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"60|60|0xa1dc00,0|120|0xa1dc00,0|180|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaul8()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"0|60|0xa1dc00,60|120|0xa1dc00,0|180|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenl1()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"60|60|0xc6ceda,120|0|0xc6ceda,180|0|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenl2()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"60|0|0xc6ceda,120|60|0xc6ceda,180|0|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenl3()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"-60|60|0xc6ceda,60|60|0xc6ceda,120|60|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenl4()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"-120|60|0xc6ceda,-60|60|0xc6ceda,60|60|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenl5()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"-60|60|0xc6ceda,0|120|0xc6ceda,0|180|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenl6()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"0|60|0xc6ceda,-60|120|0xc6ceda,0|180|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenl7()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"60|60|0xc6ceda,0|120|0xc6ceda,0|180|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenl8()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"0|60|0xc6ceda,60|120|0xc6ceda,0|180|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khil1()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"60|60|0xd75e00,120|0|0xd75e00,180|0|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khil2()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"60|0|0xd75e00,120|60|0xd75e00,180|0|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khil3()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"-60|60|0xd75e00,60|60|0xd75e00,120|60|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khil4()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"-120|60|0xd75e00,-60|60|0xd75e00,60|60|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khil5()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"-60|60|0xd75e00,0|120|0xd75e00,0|180|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khil6()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"0|60|0xd75e00,-60|120|0xd75e00,0|180|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khil7()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"60|60|0xd75e00,0|120|0xd75e00,0|180|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khil8()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"0|60|0xd75e00,60|120|0xd75e00,0|180|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gal1()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"60|60|0xfcd700,120|0|0xfcd700,180|0|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gal2()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"60|0|0xfcd700,120|60|0xfcd700,180|0|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gal3()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"-60|60|0xfcd700,60|60|0xfcd700,120|60|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gal4()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"-120|60|0xfcd700,-60|60|0xfcd700,60|60|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gal5()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"-60|60|0xfcd700,0|120|0xfcd700,0|180|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gal6()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"0|60|0xfcd700,-60|120|0xfcd700,0|180|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gal7()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"60|60|0xfcd700,0|120|0xfcd700,0|180|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gal8()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"0|60|0xfcd700,60|120|0xfcd700,0|180|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thol1()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"60|60|0xffc5d2,120|0|0xffc5d2,180|0|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thol2()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"60|0|0xffc5d2,120|60|0xffc5d2,180|0|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thol3()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"-60|60|0xffc5d2,60|60|0xffc5d2,120|60|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thol4()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"-120|60|0xffc5d2,-60|60|0xffc5d2,60|60|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thol5()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"-60|60|0xffc5d2,0|120|0xffc5d2,0|180|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thol6()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"0|60|0xffc5d2,-60|120|0xffc5d2,0|180|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thol7()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"60|60|0xffc5d2,0|120|0xffc5d2,0|180|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thol8()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"0|60|0xffc5d2,60|120|0xffc5d2,0|180|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function chol1()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"60|60|0x0a7dd0,120|0|0x0a7dd0,180|0|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function chol2()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"60|0|0x0a7dd0,120|60|0x0a7dd0,180|0|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function chol3()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"-60|60|0x0a7dd0,60|60|0x0a7dd0,120|60|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function chol4()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"-120|60|0x0a7dd0,-60|60|0x0a7dd0,60|60|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function chol5()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"-60|60|0x0a7dd0,0|120|0x0a7dd0,0|180|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function chol6()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"0|60|0x0a7dd0,-60|120|0x0a7dd0,0|180|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function chol7()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"60|60|0x0a7dd0,0|120|0x0a7dd0,0|180|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function chol8()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"0|60|0x0a7dd0,60|120|0x0a7dd0,0|180|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba1()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"60|-60|0xa1dc00,120|0|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y - 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba2()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"60|60|0xa1dc00,120|0|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba3()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"-60|60|0xa1dc00,0|120|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba4()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"60|60|0xa1dc00,0|120|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba5()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"60|60|0xa1dc00,120|60|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba6()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"-60|60|0xa1dc00,60|0|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x - 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba7()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"-120|60|0xa1dc00,-60|60|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba8()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"60|0|0xa1dc00,120|60|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba9()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"60|60|0xa1dc00,60|120|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba10()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"-60|60|0xa1dc00,-60|120|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x - 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba11()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"0|60|0xa1dc00,-60|120|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba12()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"0|60|0xa1dc00,60|120|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba13()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"0|120|0xa1dc00,0|180|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba14()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"0|60|0xa1dc00,0|180|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 180
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba15()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"120|0|0xa1dc00,180|0|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gauanba16()
+            x, y = findMultiColorInRegionFuzzy(0xa1dc00,"60|0|0xa1dc00,180|0|0xa1dc00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 180
+                y1 = y + 0
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba1()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"60|-60|0xc6ceda,120|0|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y - 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba2()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"60|60|0xc6ceda,120|0|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba3()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"-60|60|0xc6ceda,0|120|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba4()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"60|60|0xc6ceda,0|120|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba5()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"60|60|0xc6ceda,120|60|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba6()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"-60|60|0xc6ceda,60|0|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x - 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba7()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"-120|60|0xc6ceda,-60|60|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba8()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"60|0|0xc6ceda,120|60|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba9()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"60|60|0xc6ceda,60|120|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba10()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"-60|60|0xc6ceda,-60|120|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x - 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba11()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"0|60|0xc6ceda,-60|120|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba12()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"0|60|0xc6ceda,60|120|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba13()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"0|120|0xc6ceda,0|180|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba14()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"0|60|0xc6ceda,0|180|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 180
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba15()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"120|0|0xc6ceda,180|0|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaudenanba16()
+            x, y = findMultiColorInRegionFuzzy(0xc6ceda,"60|0|0xc6ceda,180|0|0xc6ceda",98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 180
+                y1 = y + 0
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khianba1()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"60|-60|0xd75e00,120|0|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y - 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khianba2()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"60|60|0xd75e00,120|0|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khianba3()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"-60|60|0xd75e00,0|120|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khianba4()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"60|60|0xd75e00,0|120|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+
+        function khianba5()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"60|60|0xd75e00,120|60|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khianba6()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"-60|60|0xd75e00,60|0|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x - 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khianba7()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"-120|60|0xd75e00,-60|60|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khianba8()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"60|0|0xd75e00,120|60|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khianba9()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"60|60|0xd75e00,60|120|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khianba10()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"-60|60|0xd75e00,-60|120|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x - 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khianba11()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"0|60|0xd75e00,-60|120|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khianba12()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"0|60|0xd75e00,60|120|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khianba13()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"0|120|0xd75e00,0|180|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khianba14()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"0|60|0xd75e00,0|180|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 180
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khianba15()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"120|0|0xd75e00,180|0|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function khianba16()
+            x, y = findMultiColorInRegionFuzzy(0xd75e00,"60|0|0xd75e00,180|0|0xd75e00",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 180
+                y1 = y + 0
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaanba1()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"60|-60|0xfcd700,120|0|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y - 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaanba2()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"60|60|0xfcd700,120|0|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaanba3()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"-60|60|0xfcd700,0|120|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaanba4()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"60|60|0xfcd700,0|120|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+
+        function gaanba5()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"60|60|0xfcd700,120|60|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaanba6()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"-60|60|0xfcd700,60|0|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x - 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaanba7()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"-120|60|0xfcd700,-60|60|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaanba8()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"60|0|0xfcd700,120|60|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaanba9()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"60|60|0xfcd700,60|120|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaanba10()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"-60|60|0xfcd700,-60|120|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x - 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaanba11()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"0|60|0xfcd700,-60|120|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaanba12()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"0|60|0xfcd700,60|120|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaanba13()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"0|120|0xfcd700,0|180|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaanba14()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"0|60|0xfcd700,0|180|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 180
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaanba15()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"120|0|0xfcd700,180|0|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaanba16()
+            x, y = findMultiColorInRegionFuzzy(0xfcd700,"60|0|0xfcd700,180|0|0xfcd700",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 180
+                y1 = y + 0
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thoanba1()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"60|-60|0xffc5d2,120|0|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y - 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thoanba2()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"60|60|0xffc5d2,120|0|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thoanba3()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"-60|60|0xffc5d2,0|120|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thoanba4()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"60|60|0xffc5d2,0|120|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+
+        function thoanba5()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"60|60|0xffc5d2,120|60|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thoanba6()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"-60|60|0xffc5d2,60|0|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x - 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thoanba7()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"-120|60|0xffc5d2,-60|60|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thoanba8()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"60|0|0xffc5d2,120|60|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thoanba9()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"60|60|0xffc5d2,60|120|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thoanba10()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"-60|60|0xffc5d2,-60|120|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x - 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thoanba11()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"0|60|0xffc5d2,-60|120|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function thoanba12()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"0|60|0xffc5d2,60|120|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function  thoanba13()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"0|120|0xffc5d2,0|180|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function  thoanba14()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"0|60|0xffc5d2,0|180|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 180
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function  thoanba15()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"120|0|0xffc5d2,180|0|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function  thoanba16()
+            x, y = findMultiColorInRegionFuzzy(0xffc5d2,"60|0|0xffc5d2,180|0|0xffc5d2",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 180
+                y1 = y + 0
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function choanba1()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"60|-60|0x0a7dd0,120|0|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y - 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function choanba2()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"60|60|0x0a7dd0,120|0|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function choanba3()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"-60|60|0x0a7dd0,0|120|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function choanba4()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"60|60|0x0a7dd0,0|120|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 60
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+
+        function choanba5()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"60|60|0x0a7dd0,120|60|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function choanba6()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"-60|60|0x0a7dd0,60|0|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 60
+                x2 = x - 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function choanba7()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"-120|60|0x0a7dd0,-60|60|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function choanba8()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"60|0|0x0a7dd0,120|60|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 120
+                y1 = y + 60
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function choanba9()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"60|60|0x0a7dd0,60|120|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function choanba10()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"-60|60|0x0a7dd0,-60|120|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x - 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function choanba11()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"0|60|0x0a7dd0,-60|120|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x - 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function choanba12()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"0|60|0x0a7dd0,60|120|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 60
+                y1 = y + 120
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function  choanba13()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"0|120|0x0a7dd0,0|180|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 0
+                y2 = y + 60
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function  choanba14()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"0|60|0x0a7dd0,0|180|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 180
+                x2 = x + 0
+                y2 = y + 120
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function  choanba15()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"120|0|0x0a7dd0,180|0|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 0
+                y1 = y + 0
+                x2 = x + 60
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function  choanba16()
+            x, y = findMultiColorInRegionFuzzy(0x0a7dd0,"60|0|0x0a7dd0,180|0|0x0a7dd0",95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                x1 = x + 180
+                y1 = y + 0
+                x2 = x + 120
+                y2 = y + 0
+                moveTo(x1,y1,x2,y2,20,200)
+            end
+        end
+
+        function gaumain1()
+            x, y = findColorInRegionFuzzy(0xa1dc00, 95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                mSleep(20);
+                gau1()
+                mSleep(20);
+                gau2()
+                mSleep(20);
+                gau3()
+                mSleep(20);
+                gau4()
+                mSleep(20);
+                gau5()
+                mSleep(20);
+                gau6()
+                mSleep(20);
+                gau7()
+                mSleep(20);
+                gau8()
+                mSleep(20);
+                gaul1()
+                mSleep(20);
+                gaul2()
+                mSleep(20);
+                gaul3()
+                mSleep(20);
+                gaul4()
+                mSleep(20);
+                gaul5()
+                mSleep(20);
+                gaul6()
+                mSleep(20);
+                gaul7()
+                mSleep(20);
+                gaul8()
+
+            end
+        end
+
+        function gaudenmain1()
+            x, y = findColorInRegionFuzzy(0xc6ceda, 98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                mSleep(20);
+                gauden1()
+                mSleep(20);
+                gauden2()
+                mSleep(20);
+                gauden3()
+                mSleep(20);
+                gauden4()
+                mSleep(20);
+                gauden5()
+                mSleep(20);
+                gauden6()
+                mSleep(20);
+                gauden7()
+                mSleep(20);
+                gauden8()
+                mSleep(20);
+                gaudenl1()
+                mSleep(20);
+                gaudenl2()
+                mSleep(20);
+                gaudenl3()
+                mSleep(20);
+                gaudenl4()
+                mSleep(20);
+                gaudenl5()
+                mSleep(20);
+                gaudenl6()
+                mSleep(20);
+                gaudenl7()
+                mSleep(20);
+                gaudenl8()
+            end
+        end
+
+        function khimain1()
+            x, y = findColorInRegionFuzzy(0xd75e00, 95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                mSleep(20);
+                khi1()
+                mSleep(20);
+                khi2()
+                mSleep(20);
+                khi3()
+                mSleep(20);
+                khi4()
+                mSleep(20);
+                khi5()
+                mSleep(20);
+                khi6()
+                mSleep(20);
+                khi7()
+                mSleep(20);
+                khi8()
+                mSleep(20);
+                khil1()
+                mSleep(20);
+                khil2()
+                mSleep(20);
+                khil3()
+                mSleep(20);
+                khil4()
+                mSleep(20);
+                khil5()
+                mSleep(20);
+                khil6()
+                mSleep(20);
+                khil7()
+                mSleep(20);
+                khil8()
+
+            end
+        end
+        function gamain1()
+            x, y = findColorInRegionFuzzy(0xfcd700, 95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                mSleep(20);
+                ga1()
+                mSleep(20);
+                ga2()
+                mSleep(20);
+                ga3()
+                mSleep(20);
+                ga4()
+                mSleep(20);
+                ga5()
+                mSleep(20);
+                ga6()
+                mSleep(20);
+                ga7()
+                mSleep(20);
+                ga8()
+                mSleep(20);
+                gal1()
+                mSleep(20);
+                gal2()
+                mSleep(20);
+                gal3()
+                mSleep(20);
+                gal4()
+                mSleep(20);
+                gal5()
+                mSleep(20);
+                gal6()
+                mSleep(20);
+                gal7()
+                mSleep(20);
+                gal8()
+
+            end
+        end
+        function thomain1()
+            x, y = findColorInRegionFuzzy(0xffc5d2, 95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                mSleep(20);
+                tho1()
+                mSleep(20);
+                tho2()
+                mSleep(20);
+                tho3()
+                mSleep(20);
+                tho4()
+                mSleep(20);
+                tho5()
+                mSleep(20);
+                tho6()
+                mSleep(20);
+                tho7()
+                mSleep(20);
+                tho8()
+                mSleep(20);
+                thol1()
+                mSleep(20);
+                thol2()
+                mSleep(20);
+                thol3()
+                mSleep(20);
+                thol4()
+                mSleep(20);
+                thol5()
+                mSleep(20);
+                thol6()
+                mSleep(20);
+                thol7()
+                mSleep(20);
+                thol8()
+
+            end
+        end
+        function chomain1()
+            x, y = findColorInRegionFuzzy(0x0a7dd0, 95,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                mSleep(20);
+                cho1()
+                mSleep(20);
+                cho2()
+                mSleep(20);
+                cho3()
+                mSleep(20);
+                cho4()
+                mSleep(20);
+                cho5()
+                mSleep(20);
+                cho6()
+                mSleep(20);
+                cho7()
+                mSleep(20);
+                cho8()
+                mSleep(20);
+                chol1()
+                mSleep(20);
+                chol2()
+                mSleep(20);
+                chol3()
+                mSleep(20);
+                chol4()
+                mSleep(20);
+                chol5()
+                mSleep(20);
+                chol6()
+                mSleep(20);
+                chol7()
+                mSleep(20);
+                chol8()
+            end
+        end
+
+        function checkgauanba()
+            x, y = findColorInRegionFuzzy(0xa1dc00, 95,30,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                gauanba1()
+                mSleep(2);
+                gauanba2()
+                mSleep(2);
+                gauanba3()
+                mSleep(2);
+                gauanba4()
+                mSleep(2);
+                gauanba5()
+                mSleep(2);
+                gauanba6()
+                mSleep(2);
+                gauanba7()
+                mSleep(2);
+                gauanba8()
+                mSleep(2);
+                gauanba9()
+                mSleep(2);
+                gauanba10()
+                mSleep(2);
+                gauanba11()
+                mSleep(2);
+                gauanba12()
+                mSleep(2);
+                gauanba13()
+                mSleep(2);
+                gauanba14()
+                mSleep(2);
+                gauanba15()
+                mSleep(2);
+                gauanba16()
+                mSleep(2);
+            end
+        end
+        
+        function checkgaudenanba()
+            x, y = findColorInRegionFuzzy(0xc6ceda, 98,30,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                gaudenanba1()
+            mSleep(2);
+            gaudenanba2()
+            mSleep(2);
+            gaudenanba3()
+            mSleep(2);
+            gaudenanba4()
+            mSleep(2);
+            gaudenanba5()
+            mSleep(2);
+            gaudenanba6()
+            mSleep(2);
+            gaudenanba7()
+            mSleep(2);
+            gaudenanba8()
+            mSleep(2);
+            gaudenanba9()
+            mSleep(2);
+            gaudenanba10()
+            mSleep(2);
+            gaudenanba11()
+            mSleep(2);
+            gaudenanba12()
+            mSleep(2);
+            gaudenanba13()
+            mSleep(2);
+            gaudenanba14()
+            mSleep(2);
+            gaudenanba15()
+            mSleep(2);
+            gaudenanba16()
+            mSleep(2);
+            end
+        end
+        
+        function checkkhianba()
+            x, y = findColorInRegionFuzzy(0xd75e00, 95,30,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                khianba1()
+                mSleep(2);
+                khianba2()
+                mSleep(2);
+                khianba3()
+                mSleep(2);
+                khianba4()
+                mSleep(2);
+                khianba5()
+                mSleep(2);
+                khianba6()
+                mSleep(2);
+                khianba7()
+                mSleep(2);
+                khianba8()
+                mSleep(2);
+                khianba9()
+                mSleep(2);
+                khianba10()
+                mSleep(2);
+                khianba11()
+                mSleep(2);
+                khianba12()
+                mSleep(2);
+                khianba13()
+                mSleep(2);
+                khianba14()
+                mSleep(2);
+                khianba15()
+                mSleep(2);
+                khianba16()
+                mSleep(2);
+            end
+        end
+        
+        function checkgaanba()
+            x, y = findColorInRegionFuzzy(0xfcd700, 95,30,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                gaanba1()
+                mSleep(2);
+                gaanba2()
+                mSleep(2);
+                gaanba3()
+                mSleep(2);
+                gaanba4()
+                mSleep(2);
+                gaanba5()
+                mSleep(2);
+                gaanba6()
+                mSleep(2);
+                gaanba7()
+                mSleep(2);
+                gaanba8()
+                mSleep(2);
+                gaanba9()
+                mSleep(2);
+                gaanba10()
+                mSleep(2);
+                gaanba11()
+                mSleep(2);
+                gaanba12()
+                mSleep(2);
+                gaanba13()
+                mSleep(2);
+                gaanba14()
+                mSleep(2);
+                gaanba15()
+                mSleep(2);
+                gaanba16()
+                mSleep(2);
+            end
+        end
+        
+        function checkthoanba()
+            x, y = findColorInRegionFuzzy(0xffc5d2, 95,30,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                thoanba1()
+                mSleep(2);
+                thoanba2()
+                mSleep(2);
+                thoanba3()
+                mSleep(2);
+                thoanba4()
+                mSleep(2);
+                thoanba5()
+                mSleep(2);
+                thoanba6()
+                mSleep(2);
+                thoanba7()
+                mSleep(2);
+                thoanba8()
+                mSleep(2);
+                thoanba9()
+                mSleep(2);
+                thoanba10()
+                mSleep(2);
+                thoanba11()
+                mSleep(2);
+                thoanba12()
+                mSleep(2);
+                thoanba13()
+                mSleep(2);
+                thoanba14()
+                mSleep(2);
+                thoanba15()
+                mSleep(2);
+                thoanba16()
+                mSleep(2);
+            end
+        end
+        
+        function checkchoanba()
+            x, y = findColorInRegionFuzzy(0x0a7dd0, 95,30,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                choanba1()
+                mSleep(2);
+                choanba2()
+                mSleep(2);
+                choanba3()
+                mSleep(2);
+                choanba4()
+                mSleep(2);
+                choanba5()
+                mSleep(2);
+                choanba6()
+                mSleep(2);
+                choanba7()
+                mSleep(2);
+                choanba8()
+                mSleep(2);
+                choanba9()
+                mSleep(2);
+                choanba10()
+                mSleep(2);
+                choanba11()
+                mSleep(2);
+                choanba12()
+                mSleep(2);
+                choanba13()
+                mSleep(2);
+                choanba14()
+                mSleep(2);
+                choanba15()
+                mSleep(2);
+                choanba16()
+                mSleep(2);
+            end
+        end
+
+        function random_gauanba1()
+            local success = false
+            success = gauanba1()
+            if success then return true end
+            mSleep(20);
+            success = gauanba2()
+            if success then return true end
+            mSleep(20);
+            success = gauanba3()
+            if success then return true end
+            mSleep(20);
+            success = gauanba4()
+            if success then return true end
+            mSleep(20);
+            success = gauanba5()
+            if success then return true end
+            mSleep(20);
+            success = gauanba6()
+            if success then return true end
+            return false
+        end
+
+        function random_gauanba2()
+            local success = false
+            success = gauanba7()
+            if success then return true end
+            mSleep(20);
+            success = gauanba8()
+            if success then return true end
+            mSleep(20);
+            success = gauanba9()
+            if success then return true end
+            mSleep(20);
+            success = gauanba10()
+            if success then return true end
+            mSleep(20);
+            success = gauanba11()
+            if success then return true end
+            mSleep(20);
+            success = gauanba12()
+            if success then return true end
+            return false
+        end
+
+        function random_gauanba3()
+            local success = false
+            success = gauanba13()
+            if success then return true end
+            mSleep(20);
+            success = gauanba14()
+            if success then return true end
+            mSleep(20);
+            success = gauanba15()
+            if success then return true end
+            mSleep(20);
+            success = gauanba16()
+            if success then return true end
+            return false
+        end
+
+        function random_gaudenanba1()
+            local success = false
+            success = gaudenanba1()
+            if success then return true end
+            mSleep(20);
+            success = gaudenanba2()
+            if success then return true end
+            mSleep(20);
+            success = gaudenanba3()
+            if success then return true end
+            mSleep(20);
+            success = gaudenanba4()
+            if success then return true end
+            mSleep(20);
+            success = gaudenanba5()
+            if success then return true end
+            mSleep(20);
+            success = gaudenanba6()
+            if success then return true end
+            return false
+        end
+
+        function random_gaudenanba2()
+            local success = false
+            success = gaudenanba7()
+            if success then return true end
+            mSleep(20);
+            success = gaudenanba8()
+            if success then return true end
+            mSleep(20);
+            success = gaudenanba9()
+            if success then return true end
+            mSleep(20);
+            success = gaudenanba10()
+            if success then return true end
+            mSleep(20);
+            success = gaudenanba11()
+            if success then return true end
+            mSleep(20);
+            success = gaudenanba12()
+            if success then return true end
+            return false
+        end
+
+        function random_gaudenanba3()
+            local success = false
+            success = gaudenanba13()
+            if success then return true end
+            mSleep(20);
+            success = gaudenanba14()
+            if success then return true end
+            mSleep(20);
+            success = gaudenanba15()
+            if success then return true end
+            mSleep(20);
+            success = gaudenanba16()
+            if success then return true end
+            return false
+        end
+
+        function random_khianba1()
+            local success = false
+            success = khianba1()
+            if success then return true end
+            mSleep(20);
+            success = khianba2()
+            if success then return true end
+            mSleep(20);
+            success = khianba3()
+            if success then return true end
+            mSleep(20);
+            success = khianba4()
+            if success then return true end
+            mSleep(20);
+            success = khianba5()
+            if success then return true end
+            mSleep(20);
+            success = khianba6()
+            if success then return true end
+            return false
+        end
+
+        function random_khianba2()
+            local success = false
+            success = khianba7()
+            if success then return true end
+            mSleep(20);
+            success = khianba8()
+            if success then return true end
+            mSleep(20);
+            success = khianba9()
+            if success then return true end
+            mSleep(20);
+            success = khianba10()
+            if success then return true end
+            mSleep(20);
+            success = khianba11()
+            if success then return true end
+            mSleep(20);
+            success = khianba12()
+            if success then return true end
+            return false
+        end
+
+        function random_khianba3()
+            local success = false
+            success = khianba13()
+            if success then return true end
+            mSleep(20);
+            success = khianba14()
+            if success then return true end
+            mSleep(20);
+            success = khianba15()
+            if success then return true end
+            mSleep(20);
+            success = khianba16()
+            if success then return true end
+            return false
+        end
+
+        function random_gaanba1()
+            local success = false
+            success = gaanba1()
+            if success then return true end
+            mSleep(20);
+            success = gaanba2()
+            if success then return true end
+            mSleep(20);
+            success = gaanba3()
+            if success then return true end
+            mSleep(20);
+            success = gaanba4()
+            if success then return true end
+            mSleep(20);
+            success = gaanba5()
+            if success then return true end
+            mSleep(20);
+            success = gaanba6()
+            if success then return true end
+            return false
+        end
+
+        function random_gaanba2()
+            local success = false
+            success = gaanba7()
+            if success then return true end
+            mSleep(20);
+            success = gaanba8()
+            if success then return true end
+            mSleep(20);
+            success = gaanba9()
+            if success then return true end
+            mSleep(20);
+            success = gaanba10()
+            if success then return true end
+            mSleep(20);
+            success = gaanba11()
+            if success then return true end
+            mSleep(20);
+            success = gaanba12()
+            if success then return true end
+            return false
+        end
+
+        function random_gaanba3()
+            local success = false
+            success = gaanba13()
+            if success then return true end
+            mSleep(20);
+            success = gaanba14()
+            if success then return true end
+            mSleep(20);
+            success = gaanba15()
+            if success then return true end
+            mSleep(20);
+            success = gaanba16()
+            if success then return true end
+            return false
+        end
+
+        function random_thoanba1()
+            local success = false
+            success = thoanba1()
+            if success then return true end
+            mSleep(20);
+            success = thoanba2()
+            if success then return true end
+            mSleep(20);
+            success = thoanba3()
+            if success then return true end
+            mSleep(20);
+            success = thoanba4()
+            if success then return true end
+            mSleep(20);
+            success = thoanba5()
+            if success then return true end
+            mSleep(20);
+            success = thoanba6()
+            if success then return true end
+            return false
+        end
+
+        function random_thoanba2()
+            local success = false
+            success = thoanba7()
+            if success then return true end
+            mSleep(20);
+            success = thoanba8()
+            if success then return true end
+            mSleep(20);
+            success = thoanba9()
+            if success then return true end
+            mSleep(20);
+            success = thoanba10()
+            if success then return true end
+            mSleep(20);
+            success = thoanba11()
+            if success then return true end
+            mSleep(20);
+            success = thoanba12()
+            if success then return true end
+            return false
+        end
+
+        function random_thoanba3()
+            local success = false
+            success = thoanba13()
+            if success then return true end
+            mSleep(20);
+            success = thoanba14()
+            if success then return true end
+            mSleep(20);
+            success = thoanba15()
+            if success then return true end
+            mSleep(20);
+            success = thoanba16()
+            if success then return true end
+            return false
+        end
+
+        function random_choanba1()
+            local success = false
+            success = choanba1()
+            if success then return true end
+            mSleep(20);
+            success = choanba2()
+            if success then return true end
+            mSleep(20);
+            success = choanba3()
+            if success then return true end
+            mSleep(20);
+            success = choanba4()
+            if success then return true end
+            mSleep(20);
+            success = choanba5()
+            if success then return true end
+            mSleep(20);
+            success = choanba6()
+            if success then return true end
+            return false
+        end
+
+        function random_choanba2()
+            local success = false
+            success = choanba7()
+            if success then return true end
+            mSleep(20);
+            success = choanba8()
+            if success then return true end
+            mSleep(20);
+            success = choanba9()
+            if success then return true end
+            mSleep(20);
+            success = choanba10()
+            if success then return true end
+            mSleep(20);
+            success = choanba11()
+            if success then return true end
+            mSleep(20);
+            success = choanba12()
+            if success then return true end
+            return false
+        end
+
+        function random_choanba3()
+            local success = false
+            success = choanba13()
+            if success then return true end
+            mSleep(20);
+            success = choanba14()
+            if success then return true end
+            mSleep(20);
+            success = choanba15()
+            if success then return true end
+            mSleep(20);
+            success = choanba16()
+            if success then return true end
+            return false
+        end
+
+        function mattrang()
+            x, y = findColorInRegionFuzzy(0x6211ff, 98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                tap(x, y);
+            end
+        end
+
+        function phatno()
+            x, y = findColorInRegionFuzzy(0xffff8d, 98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                tap(x, y);
+            end
+        end
+
+        function ngoisao()
+            x, y = findColorInRegionFuzzy(0x13ffbf, 98,31,nam1,nam2,nam3)
+            if x ~= -1 and y ~= -1 then
+                tap(x, y);
+            end
+        end
+
+
+        ---------------------------------------------------------
+
+        function zogame() ---
+            x1,y1,xx1,yy1 = 280, 733, 308, 768
+            text = ocrText(x1,y1,xx1,yy1,0)
+            if text == "L" then
+                mSleep(1000);
+                touchDown(280, 733);    
+                mSleep(50);
+                touchUp(280, 733); 
+            end
+        end
+        
+        function howtoplay() ---
+            x1,y1,xx1,yy1 = 191, 116, 352, 152
+            text = ocrText(x1,y1,xx1,yy1,0)
+            if text == "How to Play" then
+                mSleep(1000);
+                touchDown(504, 115);    
+                mSleep(50);
+                touchUp(504, 115);  
+                mSleep(5000);
+                touchDown(279, 884);   
+                mSleep(50);
+                touchUp(279, 884);  
+                mSleep(1000);
+                touchDown(266, 319);   
+                mSleep(50);
+                touchUp(266, 319);    
+                mSleep(1000);
+            end
+        end
+        
+            function thongbaolink() ---
+            x1,y1,xx1,yy1 = 198, 551, 346, 615
+            text = ocrText(x1,y1,xx1,yy1,0)
+            if text == "LINK" then
+                mSleep(1000);
+                touchDown(467, 291);    
+                mSleep(50);
+                touchUp(467, 291);    
+            end
+        end
+
+        function zogame2() ---
+            x1, y1 = findColorInRegionFuzzy(0x1f61d2, 95,230,744,263,778)
+            if x1 ~= -1 and y1 ~= -1 then
+                mSleep(50);
+                x, y = findColorInRegionFuzzy(0xffcc00, 95,221,27,236,42)
+                if x ~= -1 and y ~= -1 then
+                    mSleep(1000);
+                    touchDown(280, 733);    
+                    mSleep(50);
+                    touchUp(280, 733); 
+                end
+            end
+        end
+
+        function zogame3() ---
+            x1, y1 = findColorInRegionFuzzy(0xa318c5, 95,230,744,263,778)
+            if x1 ~= -1 and y1 ~= -1 then
+                mSleep(50);
+                x, y = findColorInRegionFuzzy(0xffcc00, 95,221,27,236,42)
+                if x ~= -1 and y ~= -1 then
+                    mSleep(1000);
+                    touchDown(280, 733);    
+                    mSleep(50);
+                    touchUp(280, 733); 
+                end
+            end
+        end
+
+        function zogame4() ---
+            x1, y1 = findColorInRegionFuzzy(0xc12930, 95,230,744,263,778)
+            if x1 ~= -1 and y1 ~= -1 then
+                mSleep(50);
+                x, y = findColorInRegionFuzzy(0xffcc00, 95,221,27,236,42)
+                if x ~= -1 and y ~= -1 then
+                    mSleep(1000);
+                    touchDown(280, 733);    
+                    mSleep(50);
+                    touchUp(280, 733); 
+                end
+            end
+        end
+
+        function lv17() ---
+            x1, y1 = findColorInRegionFuzzy(0x170d1f, 95,155,166,183,188)
+            if x1 ~= -1 and y1 ~= -1 then
+                mSleep(50);
+                x, y = findColorInRegionFuzzy(0xff7c04, 95,243,430,265,458)
+                if x ~= -1 and y ~= -1 then
+                    mSleep(1000);
+                    touchDown(266, 461);   
+                    mSleep(50);
+                    touchUp(266, 461); 
+                end
+            end
+        end
+
+        function lv12() ---
+            x1, y1 = findColorInRegionFuzzy(0x170e1f, 95,162,152,191,186)
+            if x1 ~= -1 and y1 ~= -1 then
+                mSleep(50);
+                x, y = findColorInRegionFuzzy(0xfdfdff, 95,169,531,185,546)
+                if x ~= -1 and y ~= -1 then
+                    mSleep(1000); 
+                    touchDown(166, 469);    
+                    mSleep(50);
+                    touchUp(166, 469);    
+                end
+            end
+        end
+        
+        function lv19() ---
+            x1, y1 = findColorInRegionFuzzy(0x2f110f, 95,162,152,191,186)
+            if x1 ~= -1 and y1 ~= -1 then
+                mSleep(50);
+                x, y = findColorInRegionFuzzy(0xfdfdff, 95,378,528,403,546)
+                if x ~= -1 and y ~= -1 then
+                    mSleep(1000); 
+                    touchDown(376, 469);    
+                    mSleep(50);
+                    touchUp(376, 469);    
+                end
+            end
+        end
+        
+        function lv21() ---
+            x1, y1 = findColorInRegionFuzzy(0xdcdcef, 95,525,949,535,957)
+            if x1 ~= -1 and y1 ~= -1 then
+                mSleep(50);
+                x, y = findColorInRegionFuzzy(0x0a1a21, 95,220,920,234,946)
+                if x ~= -1 and y ~= -1 then
+                    mSleep(1000); 
+                    touchDown(485, 902);    
+                    mSleep(50);
+                    touchUp(485, 902); 
+                    mSleep(2000); 
+                    touchDown(258, 915);    
+                    mSleep(50);
+                    touchUp(258, 915);  
+                end
+            end
+        end
+
+        function play() ---
+            x1, y1 = findColorInRegionFuzzy(0xf7fcff, 95,210,626,227,643)
+            if x1 ~= -1 and y1 ~= -1 then
+                mSleep(50);
+                x, y = findColorInRegionFuzzy(0x084de7, 95,174,623,204,670)
+                if x ~= -1 and y ~= -1 then
+                    mSleep(1000);
+                    touchDown(174,623);    
+                    mSleep(50);
+                    touchUp(174,623);
+                end
+            end
+        end
+
+        function play2() ---
+            x1,y1,xx1,yy1 = 221, 791, 324, 845
+            text = ocrText(x1,y1,xx1,yy1,0)
+            if text == "Play" then
+                mSleep(1000);
+                touchDown(494, 94);    
+                mSleep(50);
+                touchUp(494, 94);   
+            end
+        end
+
+        function play3() ---
+            x1,y1,xx1,yy1 = 135, 616, 220, 658
+            text = ocrText(x1,y1,xx1,yy1,0)
+            if text == "Play" then
+                mSleep(1000);
+                touchDown(135, 616);    
+                mSleep(50);
+                touchUp(135, 616);  
+            end
+        end
+
+        function okwingame() ----
+            x1, y1 = findColorInRegionFuzzy(0xfbd400, 95,212,153,282,229)
+            if x1 ~= -1 and y1 ~= -1 then
+                mSleep(50);
+                x, y = findColorInRegionFuzzy(0x115fe3, 95,161,723,230,782)
+                if x ~= -1 and y ~= -1 then
+                    mSleep(1000);
+                    touchDown(161,723);    
+                    mSleep(50);
+                    touchUp(161,723);
+                end
+            end
+        end
+        
+        function okwingame2() ----
+            x1, y1 = findColorInRegionFuzzy(0x9a5618, 95,212,153,282,229)
+            if x1 ~= -1 and y1 ~= -1 then
+                mSleep(50);
+                x, y = findColorInRegionFuzzy(0x115fe3, 95,161,723,230,782)
+                if x ~= -1 and y ~= -1 then
+                    mSleep(1000);
+                    touchDown(161,723);    
+                    mSleep(50);
+                    touchUp(161,723);
+                end
+            end
+        end
+
+        function okmauxanh() ---
+            mSleep(1000);
+            x1, y1 = findColorInRegionFuzzy(0xa0ef47, 95,111,873,122,888)
+            if x1 ~= -1 and y1 ~= -1 then
+                mSleep(50);
+                x, y = findColorInRegionFuzzy(0x10972c, 95,161,723,230,782)
+                if x ~= -1 and y ~= -1 then
+                    mSleep(1000);
+                    touchDown(161,723);    
+                    mSleep(50);
+                    touchUp(161,723);
+                end
+            end
+        end
+
+        function thua()
+            x1,y1,xx1,yy1 = 53, 460, 108, 483
+            text = ocrText(x1,y1,xx1,yy1,0)
+            if text == "How" then
+                mSleep(1000);
+                touchDown(504,347);    
+                mSleep(50);
+                touchUp(504,347); 
+            end
+        end
+
+        function ruongv()
+            x1, y1 = findColorInRegionFuzzy(0xfbcf3b, 95,14,102,30,127)
+            if x1 ~= -1 and y1 ~= -1 then
+                mSleep(50);
+                x, y = findColorInRegionFuzzy(0xf9f9fe, 95,87,121,107,142)
+                if x ~= -1 and y ~= -1 then
+                    mSleep(1000);
+                    touchDown(42,91);    
+                    mSleep(50);
+                    touchUp(42,91); 
+                    mSleep(7000);
+                    touchDown(283,371);    
+                    mSleep(50);
+                    touchUp(42,91); 
+                end
+            end
+        end
+
+        function sstarchest()
+            x1,y1,xx1,yy1 = 160, 255, 210, 275
+            text = ocrText(x1,y1,xx1,yy1,0)
+            if text == "Clear" then
+                mSleep(1000);
+                touchDown(270, 353);    
+                mSleep(50);
+                touchUp(270, 353);  
+            end
+        end
+
+        function skipp() ---
+            xx,yy,xx1,yy1 = 40, 910, 59, 935
+            text = ocrText(xx,yy,xx1,yy1,0)
+            if text == "S" then
+                mSleep(1000);
+                touchDown(40, 910);    
+                mSleep(50);
+                touchUp(40, 910); 
+            end
+        end
+
+        function bangthongbaodaugame()
+            x1,y1,xx1,yy1 = 96, 830, 136, 850
+            text = ocrText(x1,y1,xx1,yy1,0)
+            if text == "You" then
+                mSleep(1000);
+                touchDown(503,107);    
+                mSleep(50);
+                touchUp(503,107);
+            end
+        end
+
+       
+
+        function bangnhapten()
+            x1,y1,xx1,yy1 = 329, 21, 413, 61
+            text = ocrText(x1,y1,xx1,yy1,0)
+            if text == "LIVE" then
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+                touchDown(10,20)  
+                mSleep(50);
+                touchUp(10,20)
+                mSleep(50);
+            end
+        end
+
+
+        function item()
+            x1,y1,xx1,yy1 = 291, 243, 353, 269
+            text = ocrText(x1,y1,xx1,yy1,0)
+            if text == "ITEM" then
+                touchDown(282,624);    
+                mSleep(50);
+                touchUp(282,624);    
+            end
+        end
+
+        function spin()
+            x1,y1,xx1,yy1 = 207, 748, 335, 800
+            text = ocrText(x1,y1,xx1,yy1,0)
+            if text == "SPIN" then
+                touchDown(485,133);    
+                mSleep(50);
+                touchUp(485,133);       
+            end
+        end
+        
+        function mogamelen1() -- mở acc
+            flag = appIsRunning("com.wemadeplay.anipangmatch"); 
+            if flag  == 0 then     
+                toast("NamZed: Vao Game")
+                runApp("com.wemadeplay.anipangmatch")           
+            end
+            switchApp("com.wemadeplay.anipangmatch")
+        end
+
+        function lv24()
+            x1,y1,xx1,yy1 = 121, 504, 211, 528
+            text = ocrText(x1,y1,xx1,yy1,0)
+            if text == "Bulldozer" then
+                touchDown(222,795);    
+                mSleep(50);
+                touchUp(222,795);    
+                mSleep(3000);
+                touchDown(516,112);    
+                mSleep(50);
+                touchUp(516,112);  
+                mSleep(2000);
+                touchDown(372,877);    
+                mSleep(50);
+                touchUp(372,877); 
+                mSleep(2000);
+                touchDown(268,669);    
+                mSleep(50);
+                touchUp(268,669);  
+                mSleep(2000);
+                touchDown(222,795);    
+                mSleep(50);
+                touchUp(222,795); 
+                mSleep(2000);
+                closeApp("com.wemadeplay.anipangmatch");
+                toast("NamZed.Com: Văng game vào lại cho đỡ lỗi game, thắc mắc CC")
+            end
+        end
+
+        function noticelv31()
+            x1,y1,xx1,yy1 = 216, 159, 324, 187
+            text = ocrText(x1,y1,xx1,yy1,0)
+            if text == "NOTICE" then
+                touchDown(274,708);    
+                mSleep(50);
+                touchUp(274,708);       
+            end
+        end
+        
+        function buyall()
+            x1,y1,xx1,yy1 = 181, 693, 240, 715
+            text = ocrText(x1,y1,xx1,yy1,0)
+            if text == "Silver" then
+                closeApp("com.wemadeplay.anipangmatch");
+                toast("NamZed.Com: Văng game vào lại cho đỡ lỗi game, thắc mắc CC")
+            end
+        end
+        
+        function denmanhinh()
+            local snum2 = 1 
+                repeat
+                    mSleep(1000);
+                    x1, y1 = findColorInRegionFuzzy(0x000000, 98, 210, 200, 220, 210);  
+                    if x1 ~= -1 and y1 ~= -1 then
+                    mSleep(50);
+                        x, y = findColorInRegionFuzzy(0x000000, 98, 210, 670, 220, 680);  
+                        if x ~= -1 and y ~= -1 then
+                            mSleep(3000);
+                            if snum2 == 11 then
+                                closeApp("com.wemadeplay.anipangmatch");
+                                mSleep(1000);
+                                pressHomeKey()
+                                mSleep(1000);
+                                break
+                            end
+                            toast("NamZed.Com: Đen Màn Hình Vãi Lồn Lần Thứ: "..snum2.."/10")
+                        end
+                    else
+                        mSleep(500);
+                        break
+                    end
+                snum2 = snum2 + 1
+                until snum2 == 20
+                mSleep(100);
+        end
+
+        function ngoaigame()
+        denmanhinh()
+        mSleep(50);
+        mogamelen1()
+        mSleep(50);
+        howtoplay()
+        mSleep(50);
+        buyall()
+        mSleep(50);
+            thongbaolink()
+            mSleep(50);
+            zogame()
+            mSleep(50);
+            bangnhapten()
+            mSleep(50);
+            item()
+            mSleep(50);
+            zogame4() 
+            mSleep(50);
+            spin()
+            mSleep(50);
+            lv17()
+            mSleep(50);
+            lv12() 
+            mSleep(50);
+            lv19()
+            mSleep(50);
+            lv21()
+            mSleep(50);
+            lv24()
+            mSleep(50);
+            noticelv31()
+            mSleep(50);
+            zogame2()
+            mSleep(50);
+            zogame3()
+            mSleep(50);
+            play()
+            mSleep(50);
+            play2()
+            mSleep(50);
+            play3()
+            mSleep(50);
+            okwingame()
+            mSleep(50);
+            okwingame2()
+            mSleep(50);
+            okmauxanh()
+            mSleep(50);
+            thua()
+            mSleep(50);
+            ruongv()
+            mSleep(50);
+            sstarchest()
+            mSleep(50);
+            skipp()
+            mSleep(50);
+            bangthongbaodaugame()
+            mSleep(50);
+        end
+
+        function pve()
+            x, y = findColorInRegionFuzzy(0xbc6bd1, 98,442,833,478,849)
+            if x ~= -1 and y ~= -1 then
+                local success = false
+                if gaumain1() or khimain1() or gamain1() or thomain1() or chomain1() or gaudenmain1() then
+                else
+                    ngoisao()
+                    mSleep(20);
+                    phatno()
+                    mSleep(20);
+                    mattrang()
+                    success = random_gauanba1() or random_gauanba2() or random_gauanba3()
+                    if success then
+                    else
+                        ngoisao()
+                        mSleep(20);
+                        phatno()
+                        mSleep(20);
+                        mattrang()
+                        success = random_khianba1() or random_khianba2() or random_khianba3()
+                        if success then
+                        else
+                            ngoisao()
+                            mSleep(20);
+                            phatno()
+                            mSleep(20);
+                            mattrang()
+                            success = random_gaudenanba1() or random_gaudenanba2() or random_gaudenanba3()
+                            if success then
+                                toast("NamZed.Com: Ăn Gà")
+                            else
+                                ngoisao()
+                                mSleep(20);
+                                phatno()
+                                mSleep(20);
+                                mattrang()
+                                success = random_gaanba1() or random_gaanba2() or random_gaanba3()
+                                if success then
+                                    toast("NamZed.Com: Ăn Gà")
+                                else
+                                    ngoisao()
+                                    mSleep(20);
+                                    phatno()
+                                    mSleep(20);
+                                    mattrang()
+                                    success = random_thoanba1() or random_thoanba2() or random_thoanba3()
+                                    if success then
+                                        toast("NamZed.Com: Ăn Thỏ")
+                                    else
+                                        ngoisao()
+                                        mSleep(20);
+                                        phatno()
+                                        mSleep(20);
+                                        mattrang()
+                                        success = random_choanba1() or random_choanba2() or random_choanba3()
+                                        if success then
+                                            toast("NamZed.Com: Ăn Chó")
+                                        else
+                                            toast("NamZed.Com")
+                                        end
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+                ngoisao()
+                mSleep(20);
+                phatno()
+                mSleep(20);
+                mattrang()
+            else
+                mSleep(5000);
+                toast("NamZed.Com: Loading......")
+                ngoaigame()
+            end
+        end
+
+        function pvp()
+            checkgauanba()----------------
+            mSleep(timeslep);
+            checkgaudenanba()----------------
+            mSleep(timeslep);
+            checkkhianba()-------------
+            mSleep(timeslep);
+            checkgaanba()--------------
+            mSleep(timeslep);
+            checkthoanba()----------------
+            mSleep(timeslep);
+            checkchoanba()------------------
+            mSleep(timeslep);
+            toast("NamZed.Com")
+        end
+
+        if choice == 0 then      --取消
+            while true
+            do
+                pvp()
+            end
+        elseif choice == 1 then  --男
+            while true
+            do
+                pve()
+            end
+        elseif choice == 2 then  --女
+            lua_exit()
+        end
+    end
