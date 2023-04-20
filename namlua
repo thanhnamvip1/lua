@@ -1,4 +1,4 @@
- require "TSLib"
+require "TSLib"
 
 
     choice = dialogRet("Chọn Tool", "PVP", "PVE", "Thoát Tool", 0);
@@ -3513,108 +3513,111 @@
         end
 
         function pve()
-            local x, y = findColorInRegionFuzzy(0xbc6bd1, 98,442,833,478,849)
-            if x ~= -1 and y ~= -1 then
-                checkgauanba()----------------
-                mSleep(timeslep);
-                ngoisao()
-                mSleep(20);
-                phatno()
-                mSleep(20);
-                mattrang()
-                mSleep(20);
-                chomain1()----------
-                mSleep(20);
-                ngoisao()
-                mSleep(20);
-                phatno()
-                mSleep(20);
-                mattrang()
-                mSleep(20);
-                checkgaudenanba()----------------
-                mSleep(timeslep);
-                ngoisao()
-                mSleep(20);
-                phatno()
-                mSleep(20);
-                mattrang()
-                mSleep(20);
-                thomain1()----------
-                mSleep(20);
-                ngoisao()
-                mSleep(20);
-                phatno()
-                mSleep(20);
-                mattrang()
-                mSleep(20);
-                checkkhianba()-------------
-                mSleep(timeslep);
-                ngoisao()
-                mSleep(20);
-                phatno()
-                mSleep(20);
-                mattrang()
-                mSleep(20);
-                gamain1()----------
-                mSleep(20);
-                ngoisao()
-                mSleep(20);
-                phatno()
-                mSleep(20);
-                mattrang()
-                mSleep(20);
-                checkgaanba()--------------
-                mSleep(timeslep);
-                ngoisao()
-                mSleep(20);
-                phatno()
-                mSleep(20);
-                mattrang()
-                mSleep(20);
-                khimain1()----------
-                mSleep(20);
-                ngoisao()
-                mSleep(20);
-                phatno()
-                mSleep(20);
-                mattrang()
-                mSleep(20);
-                checkthoanba()----------------
-                mSleep(timeslep);
-                ngoisao()
-                mSleep(20);
-                phatno()
-                mSleep(20);
-                mattrang()
-                mSleep(20);
-                gaudenmain1()----------
-                mSleep(20);
-                ngoisao()
-                mSleep(20);
-                phatno()
-                mSleep(20);
-                mattrang()
-                mSleep(20);
-                checkchoanba()------------------
-                mSleep(timeslep);
-                toast("NamZed.Com")
-                ngoisao()
-                mSleep(20);
-                phatno()
-                mSleep(20);
-                mattrang()
-                mSleep(20);
-                gaumain1()----------
-                mSleep(20);
-                ngoisao()
-                mSleep(20);
-                phatno()
-                mSleep(20);
-                mattrang()
-                mSleep(20);
-            else
-                toast("NamZed.Com: Loading......")
-                ngoaigame()
+            while true do
+                local x, y = findColorInRegionFuzzy(0xbc6bd1, 98,442,833,478,849)
+                if x ~= -1 and y ~= -1 then
+                    checkgauanba()----------------
+                    mSleep(timeslep);
+                    ngoisao()
+                    mSleep(20);
+                    phatno()
+                    mSleep(20);
+                    mattrang()
+                    mSleep(20);
+                    chomain1()----------
+                    mSleep(20);
+                    ngoisao()
+                    mSleep(20);
+                    phatno()
+                    mSleep(20);
+                    mattrang()
+                    mSleep(20);
+                    checkgaudenanba()----------------
+                    mSleep(timeslep);
+                    ngoisao()
+                    mSleep(20);
+                    phatno()
+                    mSleep(20);
+                    mattrang()
+                    mSleep(20);
+                    thomain1()----------
+                    mSleep(20);
+                    ngoisao()
+                    mSleep(20);
+                    phatno()
+                    mSleep(20);
+                    mattrang()
+                    mSleep(20);
+                    checkkhianba()-------------
+                    mSleep(timeslep);
+                    ngoisao()
+                    mSleep(20);
+                    phatno()
+                    mSleep(20);
+                    mattrang()
+                    mSleep(20);
+                    gamain1()----------
+                    mSleep(20);
+                    ngoisao()
+                    mSleep(20);
+                    phatno()
+                    mSleep(20);
+                    mattrang()
+                    mSleep(20);
+                    checkgaanba()--------------
+                    mSleep(timeslep);
+                    ngoisao()
+                    mSleep(20);
+                    phatno()
+                    mSleep(20);
+                    mattrang()
+                    mSleep(20);
+                    khimain1()----------
+                    mSleep(20);
+                    ngoisao()
+                    mSleep(20);
+                    phatno()
+                    mSleep(20);
+                    mattrang()
+                    mSleep(20);
+                    checkthoanba()----------------
+                    mSleep(timeslep);
+                    ngoisao()
+                    mSleep(20);
+                    phatno()
+                    mSleep(20);
+                    mattrang()
+                    mSleep(20);
+                    gaudenmain1()----------
+                    mSleep(20);
+                    ngoisao()
+                    mSleep(20);
+                    phatno()
+                    mSleep(20);
+                    mattrang()
+                    mSleep(20);
+                    checkchoanba()------------------
+                    mSleep(timeslep);
+                    toast("NamZed.Com")
+                    ngoisao()
+                    mSleep(20);
+                    phatno()
+                    mSleep(20);
+                    mattrang()
+                    mSleep(20);
+                    gaumain1()----------
+                    mSleep(20);
+                    ngoisao()
+                    mSleep(20);
+                    phatno()
+                    mSleep(20);
+                    mattrang()
+                    mSleep(20);
+                else
+                    toast("NamZed.Com: Loading......")
+                    ngoaigame()
+                end
+                mSleep(50)
             end
         end
 
@@ -3634,21 +3637,6 @@
             toast("NamZed.Com")
         end
 
-        local thread = require('thread')
-
-        function showToast()
-            local t = 15
-            mSleep(500)
-            for i = 1, 10 do
-                for i = 1, t do
-                    local j = t - i
-                    toast('NamZed.Com: ⍆'..('   '):rep(i)..'➳'..('   '):rep(j)..'⊙')
-                    mSleep(70)
-                end
-            end
-        end
-
-        -- Định nghĩa hàm hiển thị toast
         function showToast()
             while true do
                 local t = 15
@@ -3656,7 +3644,7 @@
                 for i = 1, 10 do
                     for i = 1, t do
                         local j = t - i
-                        showToast('NamZed.Com: ⍆'..('   '):rep(i)..'➳'..('   '):rep(j)..'⊙', 2000)
+                        toast('NamZed.Com: ⍆'..('   '):rep(i)..'➳'..('   '):rep(j)..'⊙')
                         mSleep(2000)
                     end
                 end
@@ -3668,20 +3656,20 @@
             local co = coroutine.create(fn)
             return function() return coroutine.resume(co) end
         end
-
+        
         runShowToast = thread(showToast)
+        runShowToast()
 
         -- Bắt đầu chạy luồng hiện toast
-        if choice == 0 then      -- Hủy bỏ
+        if choice == 0 then -- Huỷ bỏ
             while true do
                 pvp()
             end
-        elseif choice == 1 then  -- Nam
+        elseif choice == 1 then -- Nam
             while true do
                 pve()
-                mSleep(50)
-                runShowToast()
             end
-        elseif choice == 2 then  -- Nữ
+        elseif choice == 2 then -- Nữ
             lua_exit()
         end
+
