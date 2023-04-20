@@ -1,4 +1,23 @@
-require "TSLib"
+    local ts              = require('ts')
+    local json            = ts.json
+    local function showToast()
+        while true do
+            local t = 15
+            mSleep(500)
+            for i = 1, 10 do
+                for i = 1, t do
+                    local j = t - i
+                    -- toast('NamZed.Com:'..('   '):rep(i)..'➳'..('   '):rep(j)..'⊙')
+                    toast('NamZed.Com')
+                    mSleep(3000)
+                end
+            end
+        end
+    end
+    local thread = require('thread')
+    local runShowToast = thread.create(function()
+        showToast()
+    end)
 
 
     choice = dialogRet("Chọn Tool", "PVP", "PVE", "Thoát Tool", 0);
@@ -2582,367 +2601,7 @@ require "TSLib"
                 mSleep(2);
             end
         end
-
-        function random_gauanba1()
-            local success = false
-            success = gauanba1()
-            if success then return true end
-            mSleep(20);
-            success = gauanba2()
-            if success then return true end
-            mSleep(20);
-            success = gauanba3()
-            if success then return true end
-            mSleep(20);
-            success = gauanba4()
-            if success then return true end
-            mSleep(20);
-            success = gauanba5()
-            if success then return true end
-            mSleep(20);
-            success = gauanba6()
-            if success then return true end
-            return false
-        end
-
-        function random_gauanba2()
-            local success = false
-            success = gauanba7()
-            if success then return true end
-            mSleep(20);
-            success = gauanba8()
-            if success then return true end
-            mSleep(20);
-            success = gauanba9()
-            if success then return true end
-            mSleep(20);
-            success = gauanba10()
-            if success then return true end
-            mSleep(20);
-            success = gauanba11()
-            if success then return true end
-            mSleep(20);
-            success = gauanba12()
-            if success then return true end
-            return false
-        end
-
-        function random_gauanba3()
-            local success = false
-            success = gauanba13()
-            if success then return true end
-            mSleep(20);
-            success = gauanba14()
-            if success then return true end
-            mSleep(20);
-            success = gauanba15()
-            if success then return true end
-            mSleep(20);
-            success = gauanba16()
-            if success then return true end
-            return false
-        end
-
-        function random_gaudenanba1()
-            local success = false
-            success = gaudenanba1()
-            if success then return true end
-            mSleep(20);
-            success = gaudenanba2()
-            if success then return true end
-            mSleep(20);
-            success = gaudenanba3()
-            if success then return true end
-            mSleep(20);
-            success = gaudenanba4()
-            if success then return true end
-            mSleep(20);
-            success = gaudenanba5()
-            if success then return true end
-            mSleep(20);
-            success = gaudenanba6()
-            if success then return true end
-            return false
-        end
-
-        function random_gaudenanba2()
-            local success = false
-            success = gaudenanba7()
-            if success then return true end
-            mSleep(20);
-            success = gaudenanba8()
-            if success then return true end
-            mSleep(20);
-            success = gaudenanba9()
-            if success then return true end
-            mSleep(20);
-            success = gaudenanba10()
-            if success then return true end
-            mSleep(20);
-            success = gaudenanba11()
-            if success then return true end
-            mSleep(20);
-            success = gaudenanba12()
-            if success then return true end
-            return false
-        end
-
-        function random_gaudenanba3()
-            local success = false
-            success = gaudenanba13()
-            if success then return true end
-            mSleep(20);
-            success = gaudenanba14()
-            if success then return true end
-            mSleep(20);
-            success = gaudenanba15()
-            if success then return true end
-            mSleep(20);
-            success = gaudenanba16()
-            if success then return true end
-            return false
-        end
-
-        function random_khianba1()
-            local success = false
-            success = khianba1()
-            if success then return true end
-            mSleep(20);
-            success = khianba2()
-            if success then return true end
-            mSleep(20);
-            success = khianba3()
-            if success then return true end
-            mSleep(20);
-            success = khianba4()
-            if success then return true end
-            mSleep(20);
-            success = khianba5()
-            if success then return true end
-            mSleep(20);
-            success = khianba6()
-            if success then return true end
-            return false
-        end
-
-        function random_khianba2()
-            local success = false
-            success = khianba7()
-            if success then return true end
-            mSleep(20);
-            success = khianba8()
-            if success then return true end
-            mSleep(20);
-            success = khianba9()
-            if success then return true end
-            mSleep(20);
-            success = khianba10()
-            if success then return true end
-            mSleep(20);
-            success = khianba11()
-            if success then return true end
-            mSleep(20);
-            success = khianba12()
-            if success then return true end
-            return false
-        end
-
-        function random_khianba3()
-            local success = false
-            success = khianba13()
-            if success then return true end
-            mSleep(20);
-            success = khianba14()
-            if success then return true end
-            mSleep(20);
-            success = khianba15()
-            if success then return true end
-            mSleep(20);
-            success = khianba16()
-            if success then return true end
-            return false
-        end
-
-        function random_gaanba1()
-            local success = false
-            success = gaanba1()
-            if success then return true end
-            mSleep(20);
-            success = gaanba2()
-            if success then return true end
-            mSleep(20);
-            success = gaanba3()
-            if success then return true end
-            mSleep(20);
-            success = gaanba4()
-            if success then return true end
-            mSleep(20);
-            success = gaanba5()
-            if success then return true end
-            mSleep(20);
-            success = gaanba6()
-            if success then return true end
-            return false
-        end
-
-        function random_gaanba2()
-            local success = false
-            success = gaanba7()
-            if success then return true end
-            mSleep(20);
-            success = gaanba8()
-            if success then return true end
-            mSleep(20);
-            success = gaanba9()
-            if success then return true end
-            mSleep(20);
-            success = gaanba10()
-            if success then return true end
-            mSleep(20);
-            success = gaanba11()
-            if success then return true end
-            mSleep(20);
-            success = gaanba12()
-            if success then return true end
-            return false
-        end
-
-        function random_gaanba3()
-            local success = false
-            success = gaanba13()
-            if success then return true end
-            mSleep(20);
-            success = gaanba14()
-            if success then return true end
-            mSleep(20);
-            success = gaanba15()
-            if success then return true end
-            mSleep(20);
-            success = gaanba16()
-            if success then return true end
-            return false
-        end
-
-        function random_thoanba1()
-            local success = false
-            success = thoanba1()
-            if success then return true end
-            mSleep(20);
-            success = thoanba2()
-            if success then return true end
-            mSleep(20);
-            success = thoanba3()
-            if success then return true end
-            mSleep(20);
-            success = thoanba4()
-            if success then return true end
-            mSleep(20);
-            success = thoanba5()
-            if success then return true end
-            mSleep(20);
-            success = thoanba6()
-            if success then return true end
-            return false
-        end
-
-        function random_thoanba2()
-            local success = false
-            success = thoanba7()
-            if success then return true end
-            mSleep(20);
-            success = thoanba8()
-            if success then return true end
-            mSleep(20);
-            success = thoanba9()
-            if success then return true end
-            mSleep(20);
-            success = thoanba10()
-            if success then return true end
-            mSleep(20);
-            success = thoanba11()
-            if success then return true end
-            mSleep(20);
-            success = thoanba12()
-            if success then return true end
-            return false
-        end
-
-        function random_thoanba3()
-            local success = false
-            success = thoanba13()
-            if success then return true end
-            mSleep(20);
-            success = thoanba14()
-            if success then return true end
-            mSleep(20);
-            success = thoanba15()
-            if success then return true end
-            mSleep(20);
-            success = thoanba16()
-            if success then return true end
-            return false
-        end
-
-        function random_choanba1()
-            local success = false
-            success = choanba1()
-            if success then return true end
-            mSleep(20);
-            success = choanba2()
-            if success then return true end
-            mSleep(20);
-            success = choanba3()
-            if success then return true end
-            mSleep(20);
-            success = choanba4()
-            if success then return true end
-            mSleep(20);
-            success = choanba5()
-            if success then return true end
-            mSleep(20);
-            success = choanba6()
-            if success then return true end
-            return false
-        end
-
-        function random_choanba2()
-            local success = false
-            success = choanba7()
-            if success then return true end
-            mSleep(20);
-            success = choanba8()
-            if success then return true end
-            mSleep(20);
-            success = choanba9()
-            if success then return true end
-            mSleep(20);
-            success = choanba10()
-            if success then return true end
-            mSleep(20);
-            success = choanba11()
-            if success then return true end
-            mSleep(20);
-            success = choanba12()
-            if success then return true end
-            return false
-        end
-
-        function random_choanba3()
-            local success = false
-            success = choanba13()
-            if success then return true end
-            mSleep(20);
-            success = choanba14()
-            if success then return true end
-            mSleep(20);
-            success = choanba15()
-            if success then return true end
-            mSleep(20);
-            success = choanba16()
-            if success then return true end
-            return false
-        end
-
+        
         function mattrang()
             local x, y = findColorInRegionFuzzy(0x6211ff, 98,2,nam1,nam2,nam3)
             if x ~= -1 and y ~= -1 then
@@ -3369,7 +3028,7 @@ require "TSLib"
         function mogamelen1() -- mở acc
             local flag = appIsRunning("com.wemadeplay.anipangmatch"); 
             if flag  == 0 then     
-                toast("NamZed: Vao Game")
+                -- toast("NamZed: Vao Game")
                 runApp("com.wemadeplay.anipangmatch")           
             end
             switchApp("com.wemadeplay.anipangmatch")
@@ -3400,7 +3059,7 @@ require "TSLib"
                 touchUp(222,795); 
                 mSleep(2000);
                 closeApp("com.wemadeplay.anipangmatch");
-                toast("NamZed.Com: Văng game vào lại cho đỡ lỗi game, thắc mắc CC")
+                -- toast("NamZed.Com: Văng game vào lại cho đỡ lỗi game, thắc mắc CC")
             end
         end
 
@@ -3419,7 +3078,7 @@ require "TSLib"
             local text = ocrText(x1,y1,xx1,yy1,0)
             if text == "Silver" then
                 closeApp("com.wemadeplay.anipangmatch");
-                toast("NamZed.Com: Văng game vào lại cho đỡ lỗi game, thắc mắc CC")
+                -- toast("NamZed.Com: Văng game vào lại cho đỡ lỗi game, thắc mắc CC")
             end
         end
         
@@ -3440,7 +3099,7 @@ require "TSLib"
                                 mSleep(1000);
                                 break
                             end
-                            toast("NamZed.Com: Đen Màn Hình Vãi Lồn Lần Thứ: "..snum2.."/10")
+                            -- toast("NamZed.Com: Đen Màn Hình Vãi Lồn Lần Thứ: "..snum2.."/10")
                         end
                     else
                         mSleep(500);
@@ -3598,7 +3257,7 @@ require "TSLib"
                     mSleep(20);
                     checkchoanba()------------------
                     mSleep(timeslep);
-                    toast("NamZed.Com")
+                    -- toast("NamZed.Com")
                     ngoisao()
                     mSleep(20);
                     phatno()
@@ -3614,7 +3273,7 @@ require "TSLib"
                     mattrang()
                     mSleep(20);
                 else
-                    toast("NamZed.Com: Loading......")
+                    -- toast("NamZed.Com: Loading......")
                     ngoaigame()
                 end
                 mSleep(50)
@@ -3634,42 +3293,27 @@ require "TSLib"
             mSleep(timeslep);
             checkchoanba()------------------
             mSleep(timeslep);
-            toast("NamZed.Com")
+            -- toast("NamZed.Com")
         end
 
-        function showToast()
-            while true do
-                local t = 15
-                mSleep(500)
-                for i = 1, 10 do
-                    for i = 1, t do
-                        local j = t - i
-                        toast('NamZed.Com: ⍆'..('   '):rep(i)..'➳'..('   '):rep(j)..'⊙')
-                        mSleep(2000)
-                    end
-                end
-            end
-        end
 
-        -- Tạo một luồng mới để chạy hàm showToast()
-        thread = function(fn)
-            local co = coroutine.create(fn)
-            return function() return coroutine.resume(co) end
-        end
-        
-        runShowToast = thread(showToast)
-        runShowToast()
 
         -- Bắt đầu chạy luồng hiện toast
-        if choice == 0 then -- Huỷ bỏ
-            while true do
+        if choice == 0 then
+            while (true) do
                 pvp()
+                mSleep(50)
+                runShowToast()
             end
-        elseif choice == 1 then -- Nam
-            while true do
+        elseif choice == 1 then
+            while (true) do
                 pve()
+                mSleep(50)
+                runShowToast()
             end
-        elseif choice == 2 then -- Nữ
+        elseif choice == 2 then
             lua_exit()
         end
 
+
+    end
